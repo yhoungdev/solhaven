@@ -1,3 +1,10 @@
 import { program } from "commander";
 
-program.name("intro").description("")
+const packageIntro = function () {
+  program
+    .name("intro")
+    .description(" A Secure and User-Friendly Solana CLI Wallet");
+  console.log("A Secure and User-Friendly Solana CLI Wallet");
+};
+
+export { packageIntro };
