@@ -1,6 +1,4 @@
-import { program } from "commander";
 import { generateKeypairs } from "../utils/generateWallet";
-import { clusterApiUrl, Connection } from "@solana/web3.js";
 import { sendToken } from "../utils/sendSolana";
 import { displayAddress } from "../utils/showAddress";
 

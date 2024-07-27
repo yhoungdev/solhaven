@@ -2,6 +2,7 @@
   "name": "solhaven",
   "module": "index.ts",
   "type": "module",
+  "description": "A simple secure solana CLI wallet",
   "devDependencies": {
     "@types/bun": "latest"
   },
