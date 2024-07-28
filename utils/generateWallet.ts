@@ -47,7 +47,6 @@ const getSecretKey = () => {
 
 const getPublicKey = () => {
   const data = JSON.parse(fs.readFileSync("encryptedKeypair.json", "utf8"));
-  console.log("Public Key: 🔑", data.publicKey);
   return data.publicKey;
 };
 

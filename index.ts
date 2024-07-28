@@ -19,7 +19,7 @@ figlet(" SolHaven", (err, data) => {
 });
 
 COMMANDS.map(({ command, action, description }) => {
-  console.log(description);
+  // console.log(description);
   program.command(command).description(description).action(action);
 });
 
