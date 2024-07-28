@@ -30,6 +30,10 @@ Sign In a New Solana Wallet
 ``` solhaven signin ```
 To sign in a new Solana wallet
 
-``` Send Tokens ```  
+``` solhaven send  ```  
 solhaven send <address> <amount>
 To send tokens to another wallet
+
+``` solhaven display```  
+solhaven display
+To show your wallet address, with a QR code

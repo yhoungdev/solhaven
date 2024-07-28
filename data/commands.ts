@@ -20,7 +20,7 @@ export const COMMANDS = [
     name: "send",
     command: "send <address> <amount>",
     description: "Send a token to another wallet",
-    action: sendToken,
+    action: (address: string, amount: string) => sendToken(address, amount),
   },
   {
     name: "display-address",
