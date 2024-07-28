@@ -1,6 +1,7 @@
 import { generateKeypairs } from "../utils/generateWallet";
 import { sendToken } from "../utils/sendSolana";
 import { displayAddress } from "../utils/showAddress";
+import { showBalance } from "../utils/showBalance";
 
 export const COMMANDS = [
   {
@@ -26,5 +27,11 @@ export const COMMANDS = [
     command: "display",
     description: "Display my solana address",
     action: displayAddress,
+  },
+  {
+    name: "show-balance",
+    command: "balance",
+    description: "Display my solana address",
+    action: showBalance,
   },
 ];

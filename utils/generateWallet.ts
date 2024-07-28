@@ -2,12 +2,15 @@ import { Keypair } from "@solana/web3.js";
 import crypto from "crypto";
 import fs from "fs";
 import { HASHKEY } from "../constant";
-
+import chalk from "chalk";
 const algorithm = "aes-256-cbc";
 const password = HASHKEY;
 const salt = "random-salt";
 
 const generateKeypairs = () => {
+  const onCreation = chalk.green(
+    " Your wallet has been created successfully 🎊🎊"
+  );
   const keypair = Keypair.generate();
   const generatePubKey = keypair.publicKey.toBase58();
   const generateSecKey = Buffer.from(keypair.secretKey).toString("base64");
@@ -25,7 +28,7 @@ const generateKeypairs = () => {
   };
 
   fs.writeFileSync("encryptedKeypair.json", JSON.stringify(dataToStore));
-
+  console.log(onCreation);
   console.log("Your wallet address: ⛓️ ", generatePubKey);
 };
 

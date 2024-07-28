@@ -8,8 +8,8 @@ export const displayAddress = () => {
   console.log(showAddress);
   console.log("👆👆👆👆👆👆👆👆👆👆👆👆👆");
 
-  //@ts-ignore
-  qrcode.generate(pubKey, (qrcode) => {
+
+  qrcode.generate(pubKey, { small: true }, (qrcode: string) => {
     console.log(qrcode);
   });
 };
