@@ -4,9 +4,10 @@ import { packageIntro } from "./utils/packageDescription";
 import { Connection, clusterApiUrl } from "@solana/web3.js";
 import { program } from "commander";
 import { COMMANDS } from "./data/commands";
+import { RPC } from "./constant";
 // #region Solana connection
 
-const connect = new Connection(clusterApiUrl("testnet"));
+const connect = new Connection(RPC);
 
 figlet(" SolHaven", (err, data) => {
   if (err) {
