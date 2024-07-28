@@ -1,15 +1,35 @@
-# solhaven
+# SolHaven CLI
 
-To install dependencies:
+SolHaven CLI is a command-line interface (CLI) tool designed to simplify interactions with the Solana blockchain. It provides a set of commands to generate wallets, sign in, send tokens, and display wallet addresses.
 
-```bash
-bun install
-```
+## Installation
 
-To run:
+Clone the repository:
 
 ```bash
-bun run index.ts
+git clone https://github.com/your-username/solhaven-cli.git
+cd solhaven-cli
+
 ```
 
-This project was created using `bun init` in bun v1.1.17. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+| Command            | Description                           | Usage                                |
+|--------------------|---------------------------------------|--------------------------------------|
+| generate-wallet    | Generate a new Solana wallet          | `solhaven generate-wallet`           |
+| signin             | Sign in a new Solana wallet           | `solhaven signin`                    |
+| send               | Send a token to another wallet        | `solhaven send <address> <amount>`   |
+| display-address    | Display my Solana address             | `solhaven display-address`           |
+
+
+
+Examples
+``` Generate a New Solana Wallet ```
+solhaven generate-wallet
+To generate a new wallet
+
+Sign In a New Solana Wallet
+``` solhaven signin ```
+To sign in a new Solana wallet
+
+``` Send Tokens ```  
+solhaven send <address> <amount>
+To send tokens to another wallet
